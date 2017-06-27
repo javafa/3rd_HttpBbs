@@ -48,12 +48,12 @@ public class WriteActivity extends AppCompatActivity
 
         // 4. json 전송
         DataSender sender = new DataSender();
-        String url = "http://192.168.10.240:8080/bbs/insert.jsp";
+        String url = "http://192.168.10.240:8080/bbs/json/insert";
         sender.sendData(url, jsonString, this);
     }
 
     @Override
-    public void call(boolean result) {
+    public void call(String result) {
         Log.d("WriteActivity", "전송결과="+result);
     }
 }
