@@ -5,6 +5,7 @@ package com.veryworks.android.httpbbs;
  */
 
 public class Bbs {
+    int no;
     String title;
     String author;
     String content;

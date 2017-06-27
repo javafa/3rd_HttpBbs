@@ -33,7 +33,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>{
     @Override
     public void onBindViewHolder(Holder holder, int position) {
         Bbs bbs = list.get(position);
-        //holder.no.setText(bbs.);
+        holder.no.setText(bbs.no + ""); // 숫자만 넣으면 에러발생
         holder.title.setText(bbs.title);
     }
 
